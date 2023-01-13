@@ -174,3 +174,82 @@ hr {
     background-color: #FEE5DF;
     color: #ED6B4F;
 }
+/*----------------
+    Media Queries
+-----------------*/
+
+/*-----------------
+    Mobile Devices
+--------------------*/
+@media only screen and (max-width:688px) {
+    header{
+        padding: 10px;
+        width: 100%;
+    }
+    .info{
+        flex-direction: column;
+    }
+    nav ul{
+        gap:10px;
+    }
+    .container{
+        width: 100%;
+    }
+    .players, .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .section-title{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .player, .blog{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .blog-info, .blog-author{
+        text-align: center;
+    }
+    .courses{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .course{
+        text-align: center;
+    }
+}
+/*-------------
+     Tablets
+---------------*/
+@media only screen and (min-width: 689px) and (max-width:991px) {
+    header{
+        padding: 20px;
+        width: 100%;
+    }
+    nav ul{
+        gap:20px;
+    }
+    .container{
+        width: 100%;
+    }
+    .players, .blogs{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .section-title{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .player, .blog{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .blog-info, .blog-author{
+        text-align: center;
+    }
+    .courses{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .course{
+        text-align: center;
+    }
+}
